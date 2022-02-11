@@ -1,0 +1,36 @@
+env:
+  version: 1.21.6
+
+name: nginx
+
+on:
+  push:
+    paths-ignore:
+      - 'nginx/**'
+    branches:
+      - 'main'
+    tags:
+      - 'v*.*.*'
+  pull_request:
+    branches:
+      - 'main'
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v2
+      -
+        uses: imranismail/setup-kustomize@v1
+      - 
+        name: Kustomize
+        run: |
+          cd demoproj/env/stage
+          kustomize edit set image ${{ env.version }}
+          git config --global user.name "Commit Bot"
+          git config --global user.email "no-reply@akuity.io"
+          git add .
+          git commit -m "Set library/nginx image tag to ${{ env.version }}"
+          git push
