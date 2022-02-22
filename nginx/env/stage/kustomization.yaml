@@ -6,4 +6,4 @@ resources:
 namePrefix: dhpup-
 images:
 - name: library/nginx
-  newTag: 1.21.6
+  newTag: 1.21.65
