@@ -28,8 +28,8 @@ jobs:
         name: Kustomize
         run: |
           cd nginx/env/stage
-          kustomize edit set image library/nginx:${{ env.version }}
           kustomize edit set nameprefix ${GITHUB_ACTOR}-
+          kustomize edit set image library/nginx:${{ env.version }}
           git config --global user.name "Commit Bot"
           git config --global user.email "no-reply@akuity.io"
           git add .
