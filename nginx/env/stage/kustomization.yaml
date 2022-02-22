@@ -3,3 +3,7 @@ kind: Kustomization
 
 resources:
 - ../../base
+namePrefix: dhpup-
+images:
+- name: library/nginx
+  newTag: 1.21.6
