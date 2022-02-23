@@ -2,7 +2,7 @@
 
 ### 1. Fork The Example Repo
 
-* Open https://github.com/gitops-workshop/my-app-deployment
+* Open https://github.com/dhpup/argo101
 * Click “Fork”. 
 
 ```
