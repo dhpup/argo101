@@ -29,8 +29,8 @@
 * Adjust the env version to 1.21.622
 * Commit the changes to GitHub. 
 * Wait for GitHub Action to complete.
-* Argo CD will detect this drift. 
-* Sync to deploy this new version.
+* Argo CD will detect the drift. 
+* Click "Sync" to deploy this new version.
 
 ### 5. Troubleshooting the deployment.
 * Once you sync the new artifact, you will notice your application is in an unhealthy state. 
