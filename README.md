@@ -19,7 +19,7 @@
  Sync Policy: Manual\
  Source Repo: Paste the link to your forked repo. (e.g. https://github.com/dhpup/argo101) \
  Source Path: In the dropdown select nginx/env/stage\
- Destination: https://kubernetes.default.svc\
+ Destination: https://kubernetes.default.svc \
  Namespace: default
 * Click "Sync" in the Argo CD UI to deploy your application.
 
