@@ -5,8 +5,13 @@
 * Open https://github.com/dhpup/argo101
 * Click “Fork”. 
 
-### 2. Next Open the Argo CD UI & Add your application YAML.
+### 2. In our CI steps, we're going to update the image version.
+* Click into the GitHub Actions YAML file here: [GitHub Actions CI Steps](.github/workflows/gha.yml)
+* Adjust the env version to 1.21.6
+* Commit changes on GitHub.
+* Once the GitHub Actions build completes, you can verify the changes were made to your staging environment YAML here: [Staging Environment Kustomization](nginx/env/stage/kustomization.yaml)
 
+### 3. Next Open the Argo CD UI & Add your application YAML.
 * Open [Insert Argo CD UI URL here]
 * Click + New App (Top Left)
 * Application Name: Your GitHub Username
@@ -16,16 +21,14 @@
 * Source Path: In the dropdown select nginx/env/stage
 * Destination: https://kubernetes.default.svc
 * Namespace: default
+* Click "Sync" in the Argo CD UI to deploy your application.
 
-### 3. Sync the application.
-* In the Argo CD UI click into your application. Then click the Sync button on the top bar.
-
-### 4. In our CI steps, we're going to update the image version.
+### 4. Deploy a new artifact version.
 * Click into the GitHub Actions YAML file here: [GitHub Actions CI Steps](.github/workflows/gha.yml)
 * Adjust the env version to 1.21.622
-* Commit changes on GitHub.
-* Once the GitHub Actions build completes, you can verify the changes were made to your staging environment YAML here: [Staging Environment Kustomization](nginx/env/stage/kustomization.yaml)
-* Sync the changes in the Argo UI.
+* Commit the changes to GitHub
+* Argo CD will detect this drift. 
+* Sync to deploy this new version.
 
 ### 5. Troubleshooting the deployment.
 * Once you sync the new artifact, you will notice your application is in an unhealthy state. 
