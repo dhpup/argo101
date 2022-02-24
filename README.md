@@ -23,11 +23,15 @@
 ### 4. In our CI steps, we're going to update the image version.
 * Click into the GitHub Actions YAML file here: [GitHub Actions CI Steps](.github/workflows/gha.yml)
 * Adjust the env version to 1.21.622
-* Commit changes
-* Sync the changes
+* Commit changes on GitHub
+* Once the GitHub Actions build completes, you can verify the changes were made to your staging environment YAML here:[Staging Environment Kustomization](nginx/env/stage/kustomization.yaml)
+* Sync the changes in the Argo UI
 
 ### 5. Troubleshooting the deployment.
-
+* Once you sync the new artifact, you will notice your application is in an unhealthy state. 
+* Follow the red statuses on Argo CD and you can figure out why. 
+* Click into the unhealthy pod then check the events and logs.
+* Rollback the deployment.
 
 
 
