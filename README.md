@@ -8,7 +8,7 @@
 ### 2. In our CI steps, we're going to update the image version.
 * Click into the GitHub Actions YAML file here: [GitHub Actions CI Steps](.github/workflows/gha.yml)
 * Adjust the env version to 1.21.6
-* Commit changes on GitHub.
+* Commit the changes on GitHub.
 * Once the GitHub Actions build completes, you can verify the changes were made to your staging environment YAML here: [Staging Environment Kustomization](nginx/env/stage/kustomization.yaml)
 
 ### 3. Next Open the Argo CD UI & Add your application YAML.
