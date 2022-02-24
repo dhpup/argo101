@@ -12,7 +12,8 @@
 * Once the GitHub Actions build completes, you can verify the changes were made to your staging environment YAML here: [Staging Environment Kustomization](nginx/env/stage/kustomization.yaml)
 
 ### 3. Next Open the Argo CD UI & Add your application YAML.
-* Open [Insert Argo CD UI URL here]
+* Open the Argo CD UI here: [Argo CD UI for Argo 101 Webinar](https://cd.demo.akuity.io/applications?proj=&sync=&health=&namespace=&cluster=&labels=)
+* Click "Login" in the top right then log in via GitHub.
 * Click "+ New App" (Top Left), then configure the following settings.
 > Application Name: Your GitHub Username \
  Project: Default \
@@ -26,7 +27,7 @@
 ### 4. Deploy a new artifact version.
 * Click into the GitHub Actions YAML file here: [GitHub Actions CI Steps](.github/workflows/gha.yml)
 * Adjust the env version to 1.21.622
-* Commit the changes to GitHub
+* Commit the changes to GitHub.
 * Argo CD will detect this drift. 
 * Sync to deploy this new version.
 
