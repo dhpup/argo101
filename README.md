@@ -17,7 +17,7 @@
 > Application Name: Your GitHub Username\
  Project: Default\
  Sync Policy: Manual\
- Source Repo: Paste the link to your forked repo. (e.g. https://github.com/dhpup/argo101)\
+ Source Repo: Paste the link to your forked repo. (e.g. https://github.com/dhpup/argo101) \
  Source Path: In the dropdown select nginx/env/stage\
  Destination: https://kubernetes.default.svc\
  Namespace: default
