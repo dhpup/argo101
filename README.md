@@ -10,3 +10,6 @@ example code
 ```
 
 [GitHub Actions CI Steps](.github/workflows/gha.yml)
+
+[Staging Environment Kustomization](nginx/env/stage/kustomization.yaml)
+
