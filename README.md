@@ -7,15 +7,15 @@
 
 ### 2. Next Open the Argo CD UI & Add your application YAML.
 
-* Open [Insert Argo CD UI here]
+* Open [Insert Argo CD UI URL here]
 * Click + New App (Top Left)
-** Application Name: Your GitHub Username
-** Project: Default
-** Sync Policy: Manual
-** Source Repo: Paste the link to your forked repo.
-** Source Path: In the dropdown select nginx/env/stage
-** Destination: https://kubernetes.default.svc
-** Namespace: default
+* Application Name: Your GitHub Username
+* Project: Default
+* Sync Policy: Manual
+* Source Repo: Paste the link to your forked repo.
+* Source Path: In the dropdown select nginx/env/stage
+* Destination: https://kubernetes.default.svc
+* Namespace: default
 
 ### 3. Sync the application
 * In the Argo CD UI click into your application. Then click the Sync button on the top bar.
