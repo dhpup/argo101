@@ -27,7 +27,8 @@
 ### 4. Deploy a new artifact version.
 * Click into the GitHub Actions YAML file here: [GitHub Actions CI Steps](.github/workflows/gha.yml)
 * Adjust the env version to 1.21.622
-* Commit the changes to GitHub.
+* Commit the changes to GitHub. 
+* Wait for GitHub Action to complete.
 * Argo CD will detect this drift. 
 * Sync to deploy this new version.
 
