@@ -24,7 +24,6 @@
 * Click into the GitHub Actions YAML file here: [GitHub Actions CI Steps](.github/workflows/gha.yml)
 * Adjust the env version to 1.21.622
 * Commit changes on GitHub.
-* Check that CI steps have completed here: [Github Actions](actions)
 * Once the GitHub Actions build completes, you can verify the changes were made to your staging environment YAML here: [Staging Environment Kustomization](nginx/env/stage/kustomization.yaml)
 * Sync the changes in the Argo UI.
 
