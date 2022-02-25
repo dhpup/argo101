@@ -1,5 +1,6 @@
 env:
   version: 1.20.2 #artifact version
+  username: ${GITHUB_ACTOR}
 
 name: nginx
 
@@ -29,7 +30,7 @@ jobs:
         name: Kustomize
         run: |
           cd nginx/env/stage
-          kustomize edit set nameprefix ${GITHUB_ACTOR}-
+          kustomize edit set nameprefix ${{ env.username.uppercase }}-
           kustomize edit set image library/nginx:${{ env.version }}
           git config --global user.name "Commit Bot"
           git config --global user.email "no-reply@akuity.io"
