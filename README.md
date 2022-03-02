@@ -5,7 +5,7 @@
 * Open https://github.com/dhpup/argo101
 * Click “Fork”. 
 
-### 2. In this Repo enable GitHub Actions. 
+### 2. In your forked Repo enable GitHub Actions. 
 * Click "Actions" in the top bar at GitHub.com in your repo. 
 * Enable GitHub Actions workflows to be executed.
 
