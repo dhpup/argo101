@@ -1,6 +1,6 @@
 # Hands-On
 
-### 0. Preqrequisites.
+### 0. Prerequisites.
 * A GitHub account.
 * An Argo CD Instance. (If attending the Webinar we will provide one for you to use.)
 
