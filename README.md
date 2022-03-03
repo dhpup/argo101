@@ -16,7 +16,7 @@
 * Once the GitHub Actions build completes, you can verify the changes were made to your staging environment YAML here: [Staging Environment Kustomization](nginx/env/stage/kustomization.yaml)
 
 ### 4. Next Open the Argo CD UI & Add your application YAML.
-* Open the Argo CD UI here: [Argo CD UI for Argo 101 Webinar](https://cd.demo.akuity.io/applications?proj=&sync=&health=&namespace=&cluster=&labels=)
+* Open the Webinar Argo CD UI here: [Argo CD UI for Argo 101 Webinar](https://cd.demo.akuity.io/applications?proj=&sync=&health=&namespace=&cluster=&labels=) Or use your own Argo CD instance. 
 * Click "Login" in the top right then log in via GitHub.
 * Click "+ New App" (Top Left), then configure the following settings.
 > Application Name: Your GitHub Username \
