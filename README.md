@@ -1,7 +1,10 @@
 # Hands-On
 
-### 1. Fork The Example Repo.
+### 0. Preqrequisites.
+* A GitHub account.
+* An Argo CD Instance. (If attending the Webinar we will provide one for you to use.)
 
+### 1. Fork The Example Repo.
 * Open https://github.com/dhpup/argo101
 * Click “Fork”. 
 
