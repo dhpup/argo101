@@ -20,7 +20,7 @@
 
 ### 4. Next Open the Argo CD UI & Add your application YAML.
 * Open the Webinar Argo CD UI here: [Argo CD UI for Argo 101 Webinar](thisdoesntexistyet) | Or use your own Argo CD instance. 
-* (You won't need to login if using the Webinar Argo CD instance provided.)Click "Login" in the top right then log in via GitHub.
+* (You won't need to login if using the Webinar Argo CD instance provided.) Click "Login" in the top right then log in via GitHub.
 * Click "+ New App" (Top Left), then configure the following settings.
 > Application Name: Your GitHub Username \
  Project: Default \
