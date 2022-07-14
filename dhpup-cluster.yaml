@@ -1,0 +1,14 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: dhpup-cluster
+
+  
+  region: us-west-2
+
+nodeGroups:
+  - name: dhpup-nodes
+    instanceType: t3.medium
+    desiredCapacity: 2
+    volumeSize: 20
