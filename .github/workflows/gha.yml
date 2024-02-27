@@ -1,32 +1,29 @@
 env:
-  version: 1.20.2 #artifact version
+  version: 1.21.6 #artifact version
 
 name: nginx
 
 on:
   push:
     paths-ignore:
-      - 'nginx/**'
-      - '**/README.md'
+      - "nginx/**"
+      - "**/README.md"
     branches:
-      - 'main'
+      - "main"
     tags:
-      - 'v*.*.*'
+      - "v*.*.*"
   pull_request:
     branches:
-      - 'main'
+      - "main"
 
 jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      -
-        name: Checkout
+      - name: Checkout
         uses: actions/checkout@v2
-      -
-        uses: imranismail/setup-kustomize@v1
-      - 
-        name: Kustomize
+      - uses: imranismail/setup-kustomize@v1
+      - name: Kustomize
         run: |
           cd nginx/env/stage
           kustomize edit set nameprefix $(echo ${GITHUB_ACTOR}- | tr '[:upper:]' '[:lower:]')
